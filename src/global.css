@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+
+    /* Cores */
+    --roxo:#987AFD;
+    --cinza-escuro:#E5E5E5;
+    --cinza-claro:#F7F7F8;
+    --cinza-texto:#858585;
+    --vermelho:#EB4531;
+    --branco:#FFFFFF;
+
+    margin:0;
+    padding: 0;
+    outline:0;
+    box-sizing: border-box;
+
+}
+html, body, #root{
+    height:100%;
+    background-color: var(--cinza-claro)
+}
+body{
+    
+    -webkit-font-smoothing:antialiased;
+}
+
+body, input, button{
+    font-family: Roboto,sans-serif;
+    
+}
