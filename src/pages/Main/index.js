@@ -36,6 +36,8 @@ function App() {
       <header>
 				<div onClick={() => history.push('/')} id="header-left">
           <img alt="perfil" src={logo}></img>
+          <h5>Home</h5>
+          <div />
 				</div>
 				<div id="header-center">
 
@@ -46,11 +48,13 @@ function App() {
       </header>
       <div id="main-body">
         <div id="carrousel">
-          <button onClick={toLeft}><FiChevronLeft size={22} strokeWidth="3" /></button>
-          <div id="main-carrousel">
-            <Carrousel label={label} />
+          <div id="align">
+            <button id="button-left" onClick={toLeft}><FiChevronLeft size={22} strokeWidth="3" /></button>
+            <div id="main-carrousel">
+              <Carrousel label={label} />
+            </div>
+            <button id="button-right" onClick={toRight}><FiChevronRight size={22} strokeWidth="3" /></button>
           </div>
-          <button onClick={toRight}><FiChevronRight size={22} strokeWidth="3" /></button>
         </div>
         <Items data={lives} />
 			</div>

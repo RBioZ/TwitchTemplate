@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactPlayer from 'react-player';
 
 import './styles.css';
 
@@ -14,42 +15,42 @@ export default function Carrousel(params){
 			<input type="radio" name="slider" id="s5" checked={params.label === 5 ? true : false} onChange={() => {}}/>
 			<label htmlFor="s1" id="slide1">
 				<div className="video">
-					<iframe title={"1"} width="100%" height="100%" src="https://www.youtube.com/embed/HmZKgaHa3Fg" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+				<ReactPlayer width="100%" height="100%" url="https://www.youtube.com/watch?v=F8z_uqFUB6U" />
 				</div>
 				<div className="info">
-					1
+					CNN BRASIL - AO VIVO
 				</div>
 			</label>
 			<label htmlFor="s2" id="slide2">
 				<div className="video">
-					<iframe title={"2"} width="100%" height="100%" src="https://www.youtube.com/embed/QAUzWtLMnU0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+					<ReactPlayer width="100%" height="100%" url="https://www.youtube.com/watch?v=16lr-G4s9KY" />
 				</div>
 				<div className="info">
-					2
+					AS 11 REGRAS DO MICHAEL JORDAN PRO SUCESSO! (e que você pode aplicar AGORA na sua vida)
 				</div>
 			</label>
 			<label htmlFor="s3" id="slide3">
 				<div className="video">
-
+					<ReactPlayer width="100%" height="100%" url="https://www.youtube.com/watch?v=Q-HNndzjtMM" />
 				</div>
 				<div className="info">
-					3
+					NINGUÉM VEIO ME CONTAR, VI E FILMEI TUDO, DE ARREPIAR!!! É pescaria.
 				</div>
 			</label>
 			<label htmlFor="s4" id="slide4">
 				<div className="video">
-
+					<ReactPlayer width="100%" height="100%" url="https://www.youtube.com/watch?v=DDU-rZs-Ic4" />
 				</div>
 				<div className="info">
-					4
+					WATCH NASA: Astronaut Spacewalk #RealTimeTracker NASA FEED | 24/7 Earth Viewing cameras
 				</div>
 			</label>
 			<label htmlFor="s5" id="slide5">
 				<div className="video">
-
+					<ReactPlayer width="100%" height="100%" url="https://www.youtube.com/watch?v=uO8As5gAlPY" />
 				</div>
 				<div className="info">
-					5
+					Day Trade Real - R$ 25 mil Em Um Dia! Meu 13º Salário como Trader! | Ganhando a Vida Adoidado!
 				</div>
 			</label>
 		</section>
